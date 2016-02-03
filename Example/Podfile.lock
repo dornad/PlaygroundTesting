@@ -1,0 +1,20 @@
+PODS:
+  - Nimble (3.0.0)
+  - PlaygroundTesting (0.1.0)
+  - Quick (0.8.0)
+
+DEPENDENCIES:
+  - Nimble (= 3.0.0)
+  - PlaygroundTesting (from `../`)
+  - Quick (~> 0.8.0)
+
+EXTERNAL SOURCES:
+  PlaygroundTesting:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
+  PlaygroundTesting: 46741dfa8e0529d647245520dc1f6f24ef4bc83a
+  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
+
+COCOAPODS: 0.39.0
