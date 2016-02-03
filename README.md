@@ -22,7 +22,7 @@ pod "PlaygroundTesting"
 
 ## Author
 
-Daniel Rodriguez, daniel@justsingit.com
+Daniel Rodriguez, daniel@danielrodriguez.name
 
 ## License
 
