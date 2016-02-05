@@ -90,7 +90,7 @@ extension TestCaseProtocol {
         	let method = "\(self.dynamicType).\(name)"
 
         	var failures = [String]()
-        	let failureHandler = { failure in 
+            let failureHandler: String -> Void = { failure in
         		if !self.continueAfterFailure {
         			fatalError("Terminating execution due to test failure")
         		} else {
@@ -110,7 +110,7 @@ extension TestCaseProtocol {
 
         	tearDown()
 
-        	var result = failures.count > 0 ? "failed" : "passed"        	
+        	let result = failures.count > 0 ? "failed" : "passed"
 
         	print("Test Case '\(method)' \(result).")
         }
