@@ -5,4 +5,4 @@ import PlaygroundTesting
 
 //: You can use Asserts directly
 
-Asserts.
+

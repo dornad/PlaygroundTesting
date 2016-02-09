@@ -1,20 +1,27 @@
 PODS:
-  - Nimble (3.0.0)
+  - Nimble (3.1.0)
   - PlaygroundTesting (0.1.0)
-  - Quick (0.8.0)
+  - Quick (0.9.1)
 
 DEPENDENCIES:
-  - Nimble (= 3.0.0)
+  - Nimble (from `https://github.com/Quick/Nimble.git`)
   - PlaygroundTesting (from `../`)
-  - Quick (~> 0.8.0)
+  - Quick (~> 0.9)
 
 EXTERNAL SOURCES:
+  Nimble:
+    :git: https://github.com/Quick/Nimble.git
   PlaygroundTesting:
     :path: ../
 
+CHECKOUT OPTIONS:
+  Nimble:
+    :commit: 1a64a3fd9cc9d7ca031a94324df4368b07df5de6
+    :git: https://github.com/Quick/Nimble.git
+
 SPEC CHECKSUMS:
-  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
+  Nimble: eb2a9b164b9a3f16df6581c692a0bfced7d072a4
   PlaygroundTesting: 46741dfa8e0529d647245520dc1f6f24ef4bc83a
-  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
+  Quick: a5221fc21788b6aeda934805e68b061839bc3165
 
 COCOAPODS: 0.39.0
