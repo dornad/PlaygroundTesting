@@ -82,38 +82,46 @@ extension TestCaseProtocol {
 	- todo: Investigate if need to implement a similar type to XCTFailure.
     */
     public func invokeTests() {
+        invokeTestsWithReturnTuple()
+    }
+    
+    internal func invokeTestsWithReturnTuple() -> (successes: [String], failures: [String]) {
+        
+        var successes = [String]()
+        var failures = [String]()
         
         let tests = self.allTests
         
         for (name, test) in tests {
-
-        	let method = "\(self.dynamicType).\(name)"
-
-        	var failures = [String]()
+            
+            let method = "\(self.dynamicType).\(name)"
+            
             let failureHandler: String -> Void = { failure in
-        		if !self.continueAfterFailure {
-        			fatalError("Terminating execution due to test failure")
-        		} else {
-        			failures.append(failure)
-        		}
-        	}
-
-        	print("Test Case '\(method)' started.")
-
-        	setUp()
-
-        	do {
-        		try test()
-        	} catch {
-        		failureHandler(method)        		
-        	}
-
-        	tearDown()
-
-        	let result = failures.count > 0 ? "failed" : "passed"
-
-        	print("Test Case '\(method)' \(result).")
+                if !self.continueAfterFailure {
+                    fatalError("Terminating execution due to test failure")
+                } else {
+                    failures.append(failure)
+                }
+            }
+            
+            print("Test Case '\(method)' started.")
+            
+            setUp()
+            
+            do {
+                try test()
+                successes.append(name)
+            } catch {
+                failureHandler(method)
+            }
+            
+            tearDown()
+            
+            let result = failures.count > 0 ? "failed" : "passed"
+            
+            print("Test Case '\(method)' \(result).")
         }
+        return (successes, failures)
     }
     
     public func setUp() {

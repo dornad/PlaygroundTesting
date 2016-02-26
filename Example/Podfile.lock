@@ -12,7 +12,7 @@ EXTERNAL SOURCES:
   Nimble:
     :git: https://github.com/Quick/Nimble.git
   PlaygroundTesting:
-    :path: ../
+    :path: "../"
 
 CHECKOUT OPTIONS:
   Nimble:
@@ -21,7 +21,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Nimble: eb2a9b164b9a3f16df6581c692a0bfced7d072a4
-  PlaygroundTesting: 46741dfa8e0529d647245520dc1f6f24ef4bc83a
+  PlaygroundTesting: fee4871c697398a98c068c4fe7b4ba2a5f1ddb9a
   Quick: a5221fc21788b6aeda934805e68b061839bc3165
 
 COCOAPODS: 0.39.0

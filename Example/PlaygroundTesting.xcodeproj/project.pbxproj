@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0663F0C31C698F9B002A6FFD /* AssertThrowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0663F0C21C698F9B002A6FFD /* AssertThrowTests.swift */; };
 		57294CE91CA2ED3186F5EA87 /* Pods_PlaygroundTesting_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40621E4F2B6510250B53FD9A /* Pods_PlaygroundTesting_Tests.framework */; };
+		5CC6190B1C7FF59100DB2BF0 /* PlaygroundTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC6190A1C7FF59100DB2BF0 /* PlaygroundTesting.framework */; };
+		5CD31CC41C7FFA10005CF974 /* TestCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD31CC21C7FFA0D005CF974 /* TestCaseSpec.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -34,7 +36,9 @@
 		348397D656C2477BB320E42E /* PlaygroundTesting.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PlaygroundTesting.podspec; path = ../PlaygroundTesting.podspec; sourceTree = "<group>"; };
 		40621E4F2B6510250B53FD9A /* Pods_PlaygroundTesting_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaygroundTesting_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F92639D3078BBB57CE3A72 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		5CFBCE081C64E2B3004AF70F /* ExamplePlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ExamplePlayground.playground; sourceTree = "<group>"; };
+		5CC6190A1C7FF59100DB2BF0 /* PlaygroundTesting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PlaygroundTesting.framework; path = "Pods/../build/Debug-iphoneos/PlaygroundTesting.framework"; sourceTree = "<group>"; };
+		5CD31CC21C7FFA0D005CF974 /* TestCaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCaseSpec.swift; sourceTree = "<group>"; };
+		5CFBCE081C64E2B3004AF70F /* SamplePlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SamplePlayground.playground; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* PlaygroundTesting_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaygroundTesting_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CC6190B1C7FF59100DB2BF0 /* PlaygroundTesting.framework in Frameworks */,
 				6996E32C82DB3F290C6639CF /* Pods_PlaygroundTesting_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,7 +91,7 @@
 		5CFBCE071C64E28F004AF70F /* Playground Example */ = {
 			isa = PBXGroup;
 			children = (
-				5CFBCE081C64E2B3004AF70F /* ExamplePlayground.playground */,
+				5CFBCE081C64E2B3004AF70F /* SamplePlayground.playground */,
 			);
 			name = "Playground Example";
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 			children = (
 				0663F0C21C698F9B002A6FFD /* AssertThrowTests.swift */,
 				607FACEB1AFB9204008FA782 /* AssertsSpec.swift */,
+				5CD31CC21C7FFA0D005CF974 /* TestCaseSpec.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -166,6 +172,7 @@
 		DE52852CF3719099C162FAF2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5CC6190A1C7FF59100DB2BF0 /* PlaygroundTesting.framework */,
 				DF7EF85130E502988E6B696C /* Pods_PlaygroundTesting_Example.framework */,
 				40621E4F2B6510250B53FD9A /* Pods_PlaygroundTesting_Tests.framework */,
 			);
@@ -383,6 +390,7 @@
 			files = (
 				0663F0C31C698F9B002A6FFD /* AssertThrowTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* AssertsSpec.swift in Sources */,
+				5CD31CC41C7FFA10005CF974 /* TestCaseSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +511,10 @@
 			baseConfigurationReference = D302DC8483E2116823ABB19E /* Pods-PlaygroundTesting_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = PlaygroundTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -516,6 +528,10 @@
 			baseConfigurationReference = 2B7246520BC5703425FF54DC /* Pods-PlaygroundTesting_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = PlaygroundTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -529,10 +545,7 @@
 			baseConfigurationReference = 8C62CAD87BB29ED6C8ED22B4 /* Pods-PlaygroundTesting_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -550,10 +563,7 @@
 			baseConfigurationReference = DBE08C5F5DE1AF6B03221202 /* Pods-PlaygroundTesting_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
