@@ -25,4 +25,8 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'PlaygroundTesting' => ['Pod/Assets/*.png']
   }
+
+  s.pod_target_xcconfig = {
+    "ENABLE_TESTABILITY" => 'YES'
+  }
 end

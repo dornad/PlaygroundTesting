@@ -16,12 +16,12 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Nimble:
-    :commit: 1a64a3fd9cc9d7ca031a94324df4368b07df5de6
+    :commit: 1730543fcd8b7d7258a3270bb6d3118921d46f9d
     :git: https://github.com/Quick/Nimble.git
 
 SPEC CHECKSUMS:
   Nimble: eb2a9b164b9a3f16df6581c692a0bfced7d072a4
-  PlaygroundTesting: fee4871c697398a98c068c4fe7b4ba2a5f1ddb9a
+  PlaygroundTesting: e9c39c407858d90a74250b00fd0e6ae30c2fcb7a
   Quick: a5221fc21788b6aeda934805e68b061839bc3165
 
 COCOAPODS: 0.39.0
