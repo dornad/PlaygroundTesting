@@ -225,7 +225,7 @@ class AssertsSpec: QuickSpec {
                 
                 it("values are the same") {
                     let assertion = PlaygroundTesting.XCTAssertLessThanOrEqual(1, 1)
-                    expect( assertion ) == failMessage
+                    expect( assertion ) == okMessage
                 }
                 
                 it("values are greater than") {
@@ -246,7 +246,7 @@ class AssertsSpec: QuickSpec {
                     expect( assertion ) == failMessage
                 }
                 
-                fit("Expressions that return ArraySlice<T> where T is Equatable") {
+                it("Expressions that return ArraySlice<T> where T is Equatable") {
                     
                     let slice:ArraySlice<Int> = [1,2,3,4][0..<2]
                     let anotherSlice:ArraySlice<Int> = [1,2,3,4,5,6,6][0..<2]
@@ -276,7 +276,7 @@ class AssertsSpec: QuickSpec {
             it("XCTAssertTrue should work as expected") {
                 let value = 1
                 let assertion = PlaygroundTesting.XCTAssertTrue( value == 2)
-                expect( assertion ) == okMessage
+                expect( assertion ) == failMessage
             }
             
             context("XCTFail should work as expected when") {

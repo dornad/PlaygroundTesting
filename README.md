@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/PlaygroundTesting.svg?style=flat)](http://cocoapods.org/pods/PlaygroundTesting)
 [![License](https://img.shields.io/cocoapods/l/PlaygroundTesting.svg?style=flat)](http://cocoapods.org/pods/PlaygroundTesting)
 [![Platform](https://img.shields.io/cocoapods/p/PlaygroundTesting.svg?style=flat)](http://cocoapods.org/pods/PlaygroundTesting)
+[![codecov.io](https://codecov.io/github/dornad/PlaygroundTesting/coverage.svg?branch=feature/codecov)](https://codecov.io/github/dornad/PlaygroundTesting?branch=feature/codecov)
 
 ## Unit Tests in Xcode Playgrounds ?
 

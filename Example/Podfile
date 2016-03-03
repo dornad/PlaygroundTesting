@@ -6,9 +6,8 @@ target 'PlaygroundTesting_Example', :exclusive => true do
 end
 
 target 'PlaygroundTesting_Tests', :exclusive => true do
+  
   pod 'PlaygroundTesting', :path => '../'
-
   pod 'Quick', '~> 0.9'
-  # pod 'Nimble', '~> 3.1'
-  pod 'Nimble', :git => 'https://github.com/Quick/Nimble.git'
+  pod 'Nimble', '~> 4.0'
 end
