@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "PlaygroundTesting"
-  s.version          = "0.1.0"
+  s.version          = "0.0.1"
   s.summary          = "A Cocoa Touch framework for running Unit Tests inside a Playground."
   s.description      = <<-DESC
                        Use Xcode Playgrounds to iterate on your code and your unit tests.
