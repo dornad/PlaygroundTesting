@@ -1,6 +1,6 @@
 # PlaygroundTesting
 
-[![CI Status](http://img.shields.io/travis/Daniel Rodriguez/PlaygroundTesting.svg?style=flat)](https://travis-ci.org/dornad/PlaygroundTesting)
+[![Build Status](https://travis-ci.org/dornad/PlaygroundTesting.svg?branch=master)](https://travis-ci.org/dornad/PlaygroundTesting)
 [![Version](https://img.shields.io/cocoapods/v/PlaygroundTesting.svg?style=flat)](http://cocoapods.org/pods/PlaygroundTesting)
 [![License](https://img.shields.io/cocoapods/l/PlaygroundTesting.svg?style=flat)](http://cocoapods.org/pods/PlaygroundTesting)
 [![Platform](https://img.shields.io/cocoapods/p/PlaygroundTesting.svg?style=flat)](http://cocoapods.org/pods/PlaygroundTesting)
