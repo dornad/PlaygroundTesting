@@ -45,7 +45,7 @@ extension AssertThrowTests {
         }
     }
     
-    func checkCapturedError(error: ErrorType, file:String = __FILE__, line:UInt = __LINE__) {
+    func checkCapturedError(error: ErrorType, file:StaticString = #file, line:UInt = #line) {
         
         guard let err = error as? MyTestingError else {
             XCTFail("Not the correct ErrorType subtype.", file:file, line:line)
